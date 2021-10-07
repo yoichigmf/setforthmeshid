@@ -1,4 +1,12 @@
 # -*- coding: utf-8 -*-
+#   https://www.gis-py.com/entry/py-latlon2mesh    こちらのコードを参照して4次メッシュ部分追加
+#
+#     2021.10.7  Y.Kayama
+#
+#
+#     経度、緯度の入力に対して4次メッシュコードを返す
+#
+
 def getmeshID(lat, lon):
     #1次メッシュ
     quotient_lat, remainder_lat = divmod(lat * 60, 40)
